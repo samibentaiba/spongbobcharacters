@@ -1,0 +1,68 @@
+/* Container for the dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  height: 400px;
+  color: black;
+  width: 400px;
+}
+
+/* Styles for each character card */
+.character-card,
+.edit-character {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+/* Images inside the cards */
+.character-card img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Details shown on click */
+.character-details h3 {
+  margin: 10px 0 5px;
+  color: black;
+}
+
+.character-details button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+}
+
+.character-details button:nth-child(2) {
+  background-color: #dc3545;
+}
+
+/* Editing form inputs */
+.edit-character input,
+.edit-character textarea {
+  width: 100%;
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.edit-character button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
